@@ -1,0 +1,31 @@
+/* =============================================
+   FILTRES (Toutes / Actives / Terminées)
+   ============================================= */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;        /* passe à la ligne si écran petit */
+}
+
+.filter-bar button {
+  padding: 8px 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-bar button:hover {
+  border-color: deepskyblue;
+  color: deepskyblue;
+}
+
+.filter-bar button.active {
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  color: white;
+  font-weight: 600;
+}

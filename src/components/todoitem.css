@@ -1,0 +1,116 @@
+/* =============================================
+   ITEM DE TÂCHE
+   ============================================= */
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.15s;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task:hover {
+  background-color: #f8fbff;
+  border-radius: 8px;
+}
+
+/* Checkbox */
+.task input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: deepskyblue;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Texte de la tâche */
+.task-title {
+  flex: 1;
+  font-size: 1.05rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #858585;
+}
+
+/* Date */
+.task-date {
+  font-size: 0.78rem;
+  color: #bbb;
+  white-space: nowrap;
+}
+
+/* Boutons Modifier / Supprimer */
+.task-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.task-actions button {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1.5px solid #ddd;
+  background: white;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-modifier:hover {
+  border-color: deepskyblue;
+  color: deepskyblue;
+}
+
+.btn-supprimer:hover {
+  border-color: #ff4d4d;
+  color: #ff4d4d;
+}
+
+/* Mode édition */
+.task-edit-input {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 1rem;
+  border: 1.5px solid deepskyblue;
+  border-radius: 6px;
+  outline: none;
+}
+.toggle {
+  width: 46px;
+  height: 26px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+.toggle-off {
+  background-color: #555;
+}
+.toggle-on {
+  background-color: deepskyblue;
+}
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.toggle-off .toggle-circle {
+  transform: translateX(0px);
+}
+.toggle-on .toggle-circle {
+  transform: translateX(22px);
+}

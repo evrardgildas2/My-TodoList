@@ -1,0 +1,92 @@
+/* =============================================
+   GLOBAL STYLES
+   ============================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* IMPORTANT: évite les débordements */
+}
+
+body {
+  height: 200vh;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px 16px;
+}
+
+/* =============================================
+   CONTAINER PRINCIPAL
+   NB: PAS de display:flex ici — les enfants
+   s'empilent naturellement en block
+   ============================================= */
+.container {
+  max-width: 480px;
+  width: 90%;
+  margin: 0 auto; /* centre horizontalement */
+  background-color: #252526;
+  border: 2px solid #3c3c3c;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* =============================================
+   TITRE
+   ============================================= */
+.titre {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d4d4d4;
+  margin-bottom: 20px;
+}
+
+/* =============================================
+   COMPTEUR DE TÂCHES ACTIVES
+   ============================================= */
+.active-count {
+  font-size: 0.95rem;
+  color: #858585;
+  margin-bottom: 16px;
+}
+
+/* =============================================
+   LISTE DES TÂCHES
+   ============================================= */
+.task {
+  border-bottom: 1px solid #2d2d2d;
+}
+.task-list {
+   color: #858585;
+  margin-top: 10px;
+}
+.task:hover {
+  background-color: #2d2d2d;
+}
+
+.task-title {
+  color: #d4d4d4;
+}
+.todoform input {
+  background-color: #3c3c3c;
+  border-color: #555;
+  color: #d4d4d4;
+}
+.todoform input::placeholder {
+  color: #858585;
+}
+.todoform button {
+  background-color: #0e639c;
+  border: none;
+  color: white;
+}
+.todoform button:hover {
+  background-color: #1177bb;
+}
+.empty-message {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+  padding: 20px 0;
+}

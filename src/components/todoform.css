@@ -1,0 +1,41 @@
+/* =============================================
+   FORMULAIRE D'AJOUT DE TÂCHE
+   ============================================= */
+.todoform {
+  display: flex;          /* flex UNIQUEMENT ici pour aligner input + bouton */
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;            /* prend toute la largeur du container */
+}
+
+.todoform input {
+  flex: 0.5;                /* l'input prend tout l'espace disponible */
+  min-width: 0;           /* IMPORTANT: évite le débordement flex */
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.todoform input:focus {
+  border-color: deepskyblue;
+}
+
+.todoform button {
+  padding: 12px 20px;
+  background-color: deepskyblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;    /* le bouton ne se réduit pas */
+  transition: background-color 0.2s;
+}
+
+.todoform button:hover {
+  background-color: #0099cc;
+}
